@@ -1,0 +1,33 @@
+extends ../partial/layout.pug
+
+block vars
+  - var date        = Date.now();
+  - var bodyClass   = ''
+  - var title       = 'title insert here'
+  - var description = ''
+  - var keywords    = ''
+  - var url         = ''
+  - var ogimage     = ''
+  - var site_name   = ''
+  //- - var style       = './css/style.css?version=' + date
+
+block script
+  script(charset="UTF-8" defer src='./js/vendor.bundle.js?version=' + date)
+  script(charset='UTF-8' defer src='./js/index.bundle.js?version=' + date)
+
+
+block contents
+  main#main(role='main')
+    section.slider
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            img(src='https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg')
+          .swiper-slide
+            img(src='https://images.pexels.com/photos/191744/pexels-photo-191744.jpeg')
+          .swiper-slide
+            img(src='https://images.pexels.com/photos/457880/pexels-photo-457880.jpeg')
+        .swiper-pagination
+        .swiper-button-prev
+        .swiper-button-next
+        //- .swiper-scrollbar

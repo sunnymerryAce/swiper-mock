@@ -1,0 +1,27 @@
+@import 'partial/reset';
+@import 'partial/module';
+@import 'partial/layout';
+
+@import '~swiper/dist/css/swiper.min.css';
+
+body {
+  background: #eee;
+}
+.swiper-container {
+  margin: 20vh auto;
+  width: 70vw;
+  height: 50vh;
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
